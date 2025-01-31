@@ -1,0 +1,491 @@
+ERROR:fastapi:Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+INFO:uvicorn.error:Started server process [1]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [1]
+INFO:uvicorn.error:Started server process [1]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+ERROR:root:Error uploading file: name 'json' is not defined
+ERROR:root:Error uploading file: name 'json' is not defined
+ERROR:root:Error uploading file: name 'json' is not defined
+ERROR:root:Error uploading file: name 'json' is not defined
+ERROR:root:Error uploading file: name 'json' is not defined
+ERROR:root:Error uploading file: name 'json' is not defined
+ERROR:root:Error uploading file: name 'json' is not defined
+ERROR:root:Error uploading file: name 'json' is not defined
+ERROR:root:Error uploading file: name 'json' is not defined
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [1]
+INFO:uvicorn.error:Started server process [1]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.22.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.22.0.5', 38536), raddr=('172.22.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbecabaeac0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbecabaeac0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.22.0.5', 38536), raddr=('172.22.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.22.0.5', 38536), raddr=('172.22.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.22.0.5', 38536), raddr=('172.22.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=False, error-arg=None; pending-error=ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.connection:Connection closed while authenticating indicating a probable authentication error
+INFO:pika.connection:Connection setup terminated due to ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",)
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",)
+ERROR:pika.adapters.utils.connection_workflow:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",); first exception - None.
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",); first exception - None
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.22.0.5', 38536), raddr=('172.22.0.4', 5672)>
+ERROR:pika.adapters.blocking_connection:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAuthenticationError: Client was disconnected at a connection stage indicating a probable authentication error: ("ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'",); first exception - None
+ERROR:pika.adapters.blocking_connection:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.ProbableAuthenticationError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:root:Error uploading file: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [1]
+INFO:uvicorn.error:Started server process [1]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.23.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 52366), raddr=('172.23.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c1ab280>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c1ab280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c1ab280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c1ab280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c1ab280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c1ab280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c1ab280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 52366), raddr=('172.23.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 52366), raddr=('172.23.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 52366), raddr=('172.23.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 52366), raddr=('172.23.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679bfbe4692c9e782a357723
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    response_data = await serialize_response(
+  File "/usr/local/lib/python3.9/site-packages/fastapi/routing.py", line 141, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/usr/local/lib/python3.9/site-packages/fastapi/encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/usr/local/lib/python3.9/site-packages/fastapi/encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.23.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 55378), raddr=('172.23.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c10b400>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c10b400> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c10b400> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c10b400> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c10b400> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c10b400> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7c0c10b400> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 55378), raddr=('172.23.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 55378), raddr=('172.23.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 55378), raddr=('172.23.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.23.0.5', 55378), raddr=('172.23.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679bfbf0692c9e782a357724
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/usr/local/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    response_data = await serialize_response(
+  File "/usr/local/lib/python3.9/site-packages/fastapi/routing.py", line 141, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/usr/local/lib/python3.9/site-packages/fastapi/encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/usr/local/lib/python3.9/site-packages/fastapi/encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [1]
+INFO:uvicorn.error:Started server process [1]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.24.0.3', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 35252), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bda2a6d0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bda2a6d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bda2a6d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bda2a6d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bda2a6d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bda2a6d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bda2a6d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 35252), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 35252), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 35252), raddr=('172.24.0.3', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 35252), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679bfc4d9f293ea084d91495
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.24.0.3', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 37152), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18b280>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18b280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18b280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18b280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18b280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18b280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18b280> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 37152), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 37152), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 37152), raddr=('172.24.0.3', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 37152), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c05dc9f293ea084d91496
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.24.0.3', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 33746), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18ea00>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18ea00> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18ea00> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18ea00> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18ea00> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18ea00> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f82bd18ea00> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 33746), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 33746), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 33746), raddr=('172.24.0.3', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.24.0.5', 33746), raddr=('172.24.0.3', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c05f19f293ea084d91497
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [1]
+INFO:uvicorn.error:Started server process [1]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.25.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 60516), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b6fcb50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b6fcb50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b6fcb50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b6fcb50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b6fcb50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b6fcb50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b6fcb50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 60516), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 60516), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 60516), raddr=('172.25.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 60516), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c094a4de9126c2227ed03
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.25.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40126), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53130>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53130> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53130> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53130> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53130> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53130> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53130> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40126), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40126), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40126), raddr=('172.25.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40126), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c0bb44de9126c2227ed04
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.25.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40128), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae538e0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae538e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae538e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae538e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae538e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae538e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae538e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40128), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40128), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40128), raddr=('172.25.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40128), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c0bb64de9126c2227ed05
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.25.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40140), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53eb0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53eb0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53eb0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53eb0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53eb0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53eb0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae53eb0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40140), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40140), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40140), raddr=('172.25.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40140), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c0bb74de9126c2227ed06
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.25.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40152), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae615e0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae615e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae615e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae615e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae615e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae615e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae615e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40152), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40152), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40152), raddr=('172.25.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40152), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c0bb74de9126c2227ed07
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.25.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40156), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae61c40>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae61c40> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae61c40> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae61c40> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae61c40> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae61c40> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29ae61c40> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40156), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40156), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40156), raddr=('172.25.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40156), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c0bb74de9126c2227ed08
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.25.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40172), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697310>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697310> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697310> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697310> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697310> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697310> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697310> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40172), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40172), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40172), raddr=('172.25.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40172), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c0bb74de9126c2227ed09
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.25.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40188), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697970>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697970> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697970> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697970> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697970> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697970> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc29b697970> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40188), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40188), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40188), raddr=('172.25.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.25.0.5', 40188), raddr=('172.25.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c0bb74de9126c2227ed0a
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [1]
+INFO:uvicorn.error:Started server process [1]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.26.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 41818), raddr=('172.26.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d6303b50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d6303b50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d6303b50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d6303b50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d6303b50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d6303b50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d6303b50> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 41818), raddr=('172.26.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 41818), raddr=('172.26.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 41818), raddr=('172.26.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 41818), raddr=('172.26.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c10bcd954162626c8f652
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.26.0.4', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 55698), raddr=('172.26.0.4', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d62a36d0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d62a36d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d62a36d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d62a36d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d62a36d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d62a36d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f42d62a36d0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 55698), raddr=('172.26.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 55698), raddr=('172.26.0.4', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 55698), raddr=('172.26.0.4', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.26.0.5', 55698), raddr=('172.26.0.4', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:File uploaded and processed: 679c26c6d954162626c8f653
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [1]
+INFO:uvicorn.error:Started server process [1]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:root:✅ Dados inseridos no MongoDB com ID: 679c28c1128f850ec99e0a7a
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.27.0.3', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 49524), raddr=('172.27.0.3', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc17aa90>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc17aa90> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc17aa90> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc17aa90> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc17aa90> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:root:✅ Mensagem enviada ao RabbitMQ: {"mongo_id": "679c28c1128f850ec99e0a7a"}
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc17aa90> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc17aa90> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 49524), raddr=('172.27.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 49524), raddr=('172.27.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 49524), raddr=('172.27.0.3', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 49524), raddr=('172.27.0.3', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:✅ Arquivo processado com sucesso. MongoDB ID: 679c28c1128f850ec99e0a7a
+INFO:root:✅ Dados inseridos no MongoDB com ID: 679c2a2e128f850ec99e0a7b
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.2.0 connecting to ('172.27.0.3', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 52922), raddr=('172.27.0.3', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc0db490>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc0db490> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc0db490> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc0db490> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc0db490> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:root:✅ Mensagem enviada ao RabbitMQ: {"mongo_id": "679c2a2e128f850ec99e0a7b"}
+INFO:pika.adapters.blocking_connection:Closing connection (200): Normal shutdown
+INFO:pika.channel:Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc0db490> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.channel:Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f99fc0db490> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+INFO:pika.connection:Closing connection (200): 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 52922), raddr=('172.27.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 52922), raddr=('172.27.0.3', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 52922), raddr=('172.27.0.3', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.connection:Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.27.0.5', 52922), raddr=('172.27.0.3', 5672)>
+INFO:pika.adapters.blocking_connection:User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+INFO:root:✅ Arquivo processado com sucesso. MongoDB ID: 679c2a2e128f850ec99e0a7b
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [1]
