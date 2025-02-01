@@ -2,16 +2,11 @@
     {
         "name": "João Silva",
         "email": "joao.silva@example.com",
-        "age": 28
+        "age": 30
     },
     {
         "name": "Maria Oliveira",
         "email": "maria.oliveira@example.com",
-        "age": 34
-    },
-    {
-        "name": "Carlos Souza",
-        "email": "carlos.souza@example.com",
-        "age": 41
+        "age": 25
     }
 ]
