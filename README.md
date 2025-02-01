@@ -51,7 +51,9 @@ docker-compose up --build -d
 
 Caso o projeto tenha uma API ou interface web, ela poderá ser acessada via:
 
-http://localhost:<PORTA>
+http://localhost:8000 - FastAPI
+http://localhost:15672/#/ - HabbitMQ
+
 
 Substitua <PORTA> pela porta mapeada no docker-compose.yml.
 
