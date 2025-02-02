@@ -11,6 +11,11 @@ services:
       - mongodb
       - rabbitmq
       - mysql
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DB: users_db
 
   mongodb:
     image: mongo:latest
@@ -25,21 +30,20 @@ services:
       - "5672:5672"
       - "15672:15672"
     environment:
-      RABBITMQ_DEFAULT_USER: user
-      RABBITMQ_DEFAULT_PASS: password
+      
+      RABBITMQ_DEFAULT_USER: root
+      RABBITMQ_DEFAULT_PASS: root
 
   mysql:
     image: mysql:5.7
     ports:
-      - "3307:3306"
+      - "3307:3306" 
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: users_db
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql # Montando arquivo init.sql no diretório correto
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql 
 
 volumes:
   mongodb_data:
