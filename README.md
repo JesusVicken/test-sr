@@ -39,6 +39,9 @@ Web (FastAPI)
 MongoDB
 RabbitMQ
 MySQL
+**Nota sobre a porta MySQL**: 
+
+A aplicação foi configurada para utilizar a porta 3307 no host, em vez da porta padrão 3306, para evitar conflitos com outras instâncias de MySQL que possam estar rodando na máquina local. Essa configuração garante que o serviço MySQL dentro do contêiner Docker não interfira em outras instalações de MySQL que possam estar utilizando a porta 3306. A comunicação interna entre o contêiner e o MySQL ainda ocorre na porta 3306, como é padrão no MySQL, mas o mapeamento da porta no host foi alterado para 3307.
 
 
 3. **Acesse a aplicação: A API estará disponível na URL http://localhost:8000.**
