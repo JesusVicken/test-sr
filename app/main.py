@@ -1,6 +1,7 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from app.services.mongo_service import save_to_mongo
 from app.services.rabbitmq_service import send_to_rabbitmq
+from app.services.mysql_service import save_to_mysql  # Importar o serviço do MySQL
 import logging
 import json
 
@@ -24,6 +25,9 @@ async def upload_file(file: UploadFile = File(...)):
         mongo_id = save_to_mongo(data)
         if not mongo_id:
             raise HTTPException(status_code=500, detail="❌ Erro ao salvar no MongoDB!")
+
+        # 🔹 Salvar no MySQL
+        save_to_mysql(data)  # Chamada para salvar no MySQL
 
         # 🔹 Enviar ID para RabbitMQ
         send_to_rabbitmq(str(mongo_id))
