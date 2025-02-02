@@ -27,9 +27,13 @@ A aplicação consiste em um backend desenvolvido com **FastAPI** que recebe arq
    cd seu-repositorio
 
 2. **Execute o comando abaixo para construir e iniciar os containers necessários:**
-docker-compose up --build
 
-    O Docker Compose irá construir os containers definidos no arquivo docker-compose.yml e iniciar os serviços de:
+    ```bash
+    docker-compose up --build
+
+
+
+O Docker Compose irá construir os containers definidos no arquivo docker-compose.yml e iniciar os serviços de:
 
 Web (FastAPI)
 MongoDB
@@ -51,26 +55,35 @@ Respostas:
     400 Bad Request: Se o arquivo não for JSON ou estiver vazio.
     500 Internal Server Error: Se ocorrer um erro ao processar o arquivo.
 
+    FASTAPI - http://localhost:8000/docs#/ 
+    RABBITMQ - http://localhost:15672/  usuário: root pass: root
+
 
 **Exemplo de Upload**
-Você pode testar o upload utilizando ferramentas como Postman ou Insomnia.
+    Você pode testar o upload utilizando ferramentas como Postman ou Insomnia.
 
-Selecione o método POST e envie o arquivo JSON para http://localhost:8000/upload/.
+    Selecione o método POST e envie o arquivo JSON para http://localhost:8000/upload/.
 
-Exemplo de conteúdo JSON esperado:
+    Exemplo de conteúdo JSON esperado:
 
-[
-  {
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "age": 30
-  },
-  {
-    "name": "Jane Smith",
-    "email": "jane.smith@example.com",
-    "age": 25
-  }
-]
+    
+### Exemplo de conteúdo JSON esperado:
+
+    ```json
+    [
+    {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "age": 30
+    },
+    {
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "age": 25
+    }
+    ]
+
+   
 
 
 5. **Variáveis de Ambiente**
