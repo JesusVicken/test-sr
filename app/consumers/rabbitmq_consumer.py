@@ -7,7 +7,7 @@ from app.services.mysql_service import save_to_mysql
 import logging
 
 # Configurações do RabbitMQ diretamente no código
-RABBITMQ_HOST = "rabbitmq"  # ou o valor que você desejar
+RABBITMQ_HOST = "rabbitmq"  
 RABBITMQ_QUEUE = "user_data"
 RABBITMQ_USER = "root"
 RABBITMQ_PASSWORD = "root"

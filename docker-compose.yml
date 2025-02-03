@@ -47,6 +47,17 @@ services:
       - mysql_data:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
+  test_runner:
+    build: .
+    volumes:
+      - .:/app
+    depends_on:
+      - web
+      - mongodb
+      - mysql
+      - rabbitmq
+    command: [ "pytest", "-v" ]
+
 volumes:
   mongodb_data:
   mysql_data:
