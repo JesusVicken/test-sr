@@ -115,12 +115,11 @@ O banco de dados MySQL é inicializado com o schema e dados padrão. Se necessá
 
 
 
-6. **TESTE AUTOMATIZADOS**
+7. **TESTE AUTOMATIZADOS**
 
-    Para rodar os teste com o docker-compose:
-        ```bash
-            docker-compose up --build test_runner
-
+   Para rodar os teste com o docker-compose:
+   ```bash
+        docker-compose up --build test_runner
 
 Este comando irá:
 
